@@ -4,12 +4,19 @@
     <title>RailsWikinimous</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= stylesheet_link_tag 'application','//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css' %>
+    <%= stylesheet_link_tag 'application','//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css' %>
+    <%= stylesheet_link_tag 'application','https://fonts.googleapis.com/css?family=Roboto&display=swap' %>
+    <%= stylesheet_link_tag 'application','https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <nav class="navbar navbar-custom">
+      <a class="navbar-brand" href="#">Wikinonimous</a>
+      <a class="navbar-brand" href="#">New</a>
+    </nav>
     <%= yield %>
   </body>
 </html>
